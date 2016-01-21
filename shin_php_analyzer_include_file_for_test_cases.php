@@ -13,7 +13,7 @@ class my_class
     const my_class_var = "my_class_var";
     
     static function my_static_func($var) {
-        echo $var;
+    	echo $var;
         mysql_query($var);
         exec($var);
     }

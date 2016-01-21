@@ -26,7 +26,7 @@ print "{$_GET['uninit_spec_var']}"; // ALERT
 print "{$init_compiled_var_without_spec_var}"; // WARN
 print "{$init_compiled_var_with_spec_var}"; // ALERT
 print "{$_GET['init_spec_var']}"; // ALERT
-print "{$uninit_spec_var_with_safety_func}"; // NONE (failed) <- WARN
+print "{$uninit_spec_var_with_safety_func}"; // NONE
 
 printf("PRINTF_STRING"); // NONE
 printf("%s", $uninit_var); // WARN

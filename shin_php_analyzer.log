@@ -64,11 +64,6 @@ SHIN[FUNCTION_NAME]:echo/print
 SHIN[VAR_VALUE][1]:init_spec_var
 SHIN[ALERT]:VULNERABLE!
 
-SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_main_file_of_test_cases.php
-SHIN[LINENO]:29
-SHIN[FUNCTION_NAME]:echo/print
-SHIN[WARN]:MAY BE VULNERABLE!
-
 SHIN[WARN]:The variable is not initialized!
 SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_main_file_of_test_cases.php
 SHIN[LINENO]:32
@@ -116,6 +111,11 @@ SHIN[WARN]:MAY BE VULNERABLE!
 SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_main_file_of_test_cases.php
 SHIN[LINENO]:44
 SHIN[FUNCTION]:exec
+SHIN[ALERT]:VULNERABLE!
+
+SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_main_file_of_test_cases.php
+SHIN[LINENO]:45
+SHIN[FUNCTION]:system
 SHIN[ALERT]:VULNERABLE!
 
 SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_main_file_of_test_cases.php
