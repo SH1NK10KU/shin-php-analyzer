@@ -5,7 +5,7 @@ shin-php-analyzer
 Shin PHP Analyzer is a tool based on Zend Engine to analyze the vulnerable PHP source code.
 
 ### Details
-* Now it is ready for XSS, SQLI, CMDI.
+* Now ready for XSS, SQLI, CMDI.
  1. XSS: htmlspecialchars, htmlentities -> echo, print, printf
  2. SQLI: mysql_real_escape_string, addslashes, sqlite_escape_string -> mysql_query, mysqli_query, sqlite_query, sqlite_single_query
  3. CMDI: escapeshellcmd, escapeshellarg -> exec, passthru, proc_open, shell_exec, system
