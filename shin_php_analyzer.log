@@ -68,7 +68,7 @@ SHIN[WARN]:The variable is not initialized!
 SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_main_file_of_test_cases.php
 SHIN[LINENO]:32
 SHIN[FUNCTION]:printf
-SHIN[WARN]:MAY BE VULNERABLE!
+SHIN[ALERT]:VULNERABLE!
 
 SHIN[WARN]:The variable is not initialized!
 SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_main_file_of_test_cases.php
@@ -95,7 +95,7 @@ SHIN[WARN]:The variable is not initialized!
 SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_main_file_of_test_cases.php
 SHIN[LINENO]:41
 SHIN[FUNCTION]:proc_open
-SHIN[WARN]:MAY BE VULNERABLE!
+SHIN[ALERT]:VULNERABLE!
 
 SHIN[WARN]:The variable is not initialized!
 SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_main_file_of_test_cases.php
@@ -133,7 +133,7 @@ SHIN[WARN]:The variable is not initialized!
 SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_main_file_of_test_cases.php
 SHIN[LINENO]:62
 SHIN[FUNCTION]:printf
-SHIN[WARN]:MAY BE VULNERABLE!
+SHIN[ALERT]:VULNERABLE!
 
 SHIN[WARN]:The variable is not initialized!
 SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_main_file_of_test_cases.php
@@ -171,34 +171,44 @@ SHIN[LINENO]:8
 SHIN[FUNCTION]:exec
 SHIN[ALERT]:VULNERABLE!
 
-SHIN[WARN]:The variable is not initialized!
 SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_include_file_for_test_cases.php
 SHIN[LINENO]:7
 SHIN[FUNCTION]:mysql_query
 SHIN[WARN]:MAY BE VULNERABLE!
 
-SHIN[WARN]:The variable is not initialized!
 SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_include_file_for_test_cases.php
 SHIN[LINENO]:8
 SHIN[FUNCTION]:exec
 SHIN[WARN]:MAY BE VULNERABLE!
 
+SHIN[WARN]:The variable is not initialized!
+SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_include_file_for_test_cases.php
+SHIN[LINENO]:7
+SHIN[FUNCTION]:mysql_query
+SHIN[ALERT]:VULNERABLE!
+
+SHIN[WARN]:The variable is not initialized!
+SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_include_file_for_test_cases.php
+SHIN[LINENO]:8
+SHIN[FUNCTION]:exec
+SHIN[ALERT]:VULNERABLE!
+
 SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_include_file_for_test_cases.php
 SHIN[LINENO]:16
 SHIN[FUNCTION_NAME]:echo/print
-SHIN[WARN]:MAY BE VULNERABLE!
+SHIN[ALERT]:VULNERABLE!
 
 SHIN[WARN]:The variable is not initialized!
 SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_include_file_for_test_cases.php
 SHIN[LINENO]:17
 SHIN[FUNCTION]:mysql_query
-SHIN[WARN]:MAY BE VULNERABLE!
+SHIN[ALERT]:VULNERABLE!
 
 SHIN[WARN]:The variable is not initialized!
 SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_include_file_for_test_cases.php
 SHIN[LINENO]:18
 SHIN[FUNCTION]:exec
-SHIN[WARN]:MAY BE VULNERABLE!
+SHIN[ALERT]:VULNERABLE!
 
 SHIN[FILE]:/root/Documents/temp/shin_php_analyzer_include_file_for_test_cases.php
 SHIN[LINENO]:22

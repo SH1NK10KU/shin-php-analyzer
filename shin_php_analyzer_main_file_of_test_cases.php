@@ -61,27 +61,27 @@ mysqli_query($uninit_spec_var_with_safety_func); // NONE
 function my_func_without_ret($var) {
     printf("%d%d", $var, $var);
 }
-my_func_without_ret($my_func_without_ret_var); // WARN LINE 41
-my_func_without_ret($_GET['my_func_without_ret_spec_var']); // ALERT LINE 41
+my_func_without_ret($my_func_without_ret_var); // WARN LINE 62
+my_func_without_ret($_GET['my_func_without_ret_spec_var']); // ALERT LINE 62
 my_func_without_ret(htmlspecialchars($_GET['my_func_without_ret_spec_var'])); // NONE
 
 function my_func_with_ret($var) {
     return ($var);
 }
 $my_func_with_ret_var = "my_func_with_ret_var";
-echo my_func_with_ret($my_func_with_ret_var); // WARN
+echo my_func_with_ret($my_func_with_ret_var); // WARN LINE 72
 
-my_func($_GET['my_func_spec_var']);
+my_func($_GET['my_func_spec_var']); // ALERT INCLUDE_FILE LINE 6 & 7 & 8
 
 $my_func_spec_var = $_GET['my_func_spec_var'];
-my_func($_GET['my_func_spec_var']); // ALERT
-my_func(htmlspecialchars($_GET['my_func_spec_var'])); // ALERT
-my_func($my_func_spec_var); // WARN
+my_func($_GET['my_func_spec_var']); // ALERT INCLUDE_FILE LINE 6 & 7 & 8
+my_func(htmlspecialchars($_GET['my_func_spec_var'])); // WARN INCLUDE_FILE LINE 7 & 8
+my_func($my_func_spec_var); // WARN INCLUDE_FILE LINE 6 & 7 & 8
 
 $my_static_func_spec_var = $_GET['my_static_func_spec_var'];
-my_class::my_static_func($my_static_func_spec_var); // ALERT
+my_class::my_static_func($my_static_func_spec_var); // ALERT INCLUDE_FILE LINE 16 & 17 & 18
 
 $my_class_instance = new my_class;
-$my_class_instance->my_func(); // WARN
+$my_class_instance->my_func(); // WARN INCLUDE_FILE LINE 22 & 23 & 24
 
 ?>
