@@ -71,12 +71,11 @@ function my_func_with_ret($var) {
 $my_func_with_ret_var = "my_func_with_ret_var";
 echo my_func_with_ret($my_func_with_ret_var); // WARN LINE 72
 
-my_func($_GET['my_func_spec_var']); // ALERT INCLUDE_FILE LINE 6 & 7 & 8
-
+my_func($_GET['my_func_spec_var']); // ALERT INCLUDE_FILE LINE 7 & 8
 $my_func_spec_var = $_GET['my_func_spec_var'];
-my_func($_GET['my_func_spec_var']); // ALERT INCLUDE_FILE LINE 6 & 7 & 8
-my_func(htmlspecialchars($_GET['my_func_spec_var'])); // WARN INCLUDE_FILE LINE 7 & 8
-my_func($my_func_spec_var); // WARN INCLUDE_FILE LINE 6 & 7 & 8
+my_func($_GET['my_func_spec_var']); // ALERT INCLUDE_FILE LINE 7 & 8
+my_func(addslashes($_GET['my_func_spec_var'])); // WARN INCLUDE_FILE LINE 8
+my_func($my_func_spec_var); // WARN INCLUDE_FILE LINE 7 & 8
 
 $my_static_func_spec_var = $_GET['my_static_func_spec_var'];
 my_class::my_static_func($my_static_func_spec_var); // ALERT INCLUDE_FILE LINE 16 & 17 & 18
